@@ -1,0 +1,16 @@
+command line tool to refresh on common sorting algorithms. Options are bubble sort, selection sort, merge sort, and quick sort.
+
+compile: javac sortingTest.java
+
+Usage
+java sortingTest --{algorithm} {array}
+
+There are three test case arrays defined in the class. Enter 1, 2, 3 to perform any of the sorting algorithms on them.
+
+--merge or -m: performs merge sort on selected array. Merge sort is a divide and conquer algorithm in which we divide the array in half, sort each half, and merge them back together. O(nlog(n)) average and worst case.
+
+--bubble or -b: performs bubble sort on selected array. Bubble sort starts at the beginning of the array and swaps the first two elements if the first element is greater than the second. The algorithm will continue to do this for all pairs in the array until it is sorted. O(n^2) average and worst case
+
+--selection or -s: performs selection sort on selected array. Selection array finds the minimum value in the array through a linear scan and swaps that value with the value in the index that the incrementor is currently on. It will continue to do this until it has gone through the entire array. O(n^2) average and worst case
+
+--quick or -q: performs quick sort on selected array. Quick sort picks a random element and partitions the array at that element. It then sorts the array such that all numbers less than the partition come before and those greater come after it. O(nlog(n)) on average, O(n^2) worst case
